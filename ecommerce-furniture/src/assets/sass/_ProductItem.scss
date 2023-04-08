@@ -1,0 +1,121 @@
+/*.card{
+    border-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .card-img-top{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .fa-star, .fa-star-half-alt, .far{
+        color: #25a745;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 2rem;
+        color: $blue;
+    }
+    button{
+        border-radius: 50%;
+        background-color: $purple;
+        text-align: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        &:hover{
+            background-color: $blue;
+        }
+        .fa-shopping-cart{
+            color: $white;
+            font-size: 21px;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}*/
+.box-container{
+    @include grid(26rem);
+
+    .cart{
+        position: relative;
+        background: #f2f2f2;
+        overflow: hidden;
+
+        &:hover{
+
+            .image img{
+                transform: scale(1.2);
+            }
+
+            .icons{
+                top: 0;
+            }
+        }
+
+        .icons{
+            position: absolute;
+            top: -100%;
+            left: 0;
+            height: 30rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            background: rgba(242,242,242, .7);
+            z-index: 10;
+
+            a{
+                text-align: center;
+                height: 5rem;
+                line-height: 5rem;
+                width: 5rem;
+                background: $white;
+                color: $purple;
+                font-size: 2rem;
+                box-shadow: $box-shadow;
+                text-decoration: none;
+
+                &:hover{
+                    background: $purple;
+                    color: $white;
+                }
+            }
+        }
+
+        .image{
+            height: 30rem;
+            width: 100%;
+            overflow: hidden;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content{
+            padding: 1.5rem 2rem;
+
+            .price{
+                font-size: 1.7rem;
+                color: $blue;
+            }
+
+            h3{
+                font-size: 2rem;
+                color: $purple;
+                padding: .5rem 0;
+            }
+
+            .stars{
+                font-size: 1.7rem;
+
+                i{
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}

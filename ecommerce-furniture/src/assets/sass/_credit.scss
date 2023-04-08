@@ -1,0 +1,140 @@
+.container-credit{
+    min-height: 100vh;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+.container-credit form{
+    background: $white;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+.container-credit form .inputBox{
+    margin-top: 20px;
+}
+.container-credit form .inputBox span{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+.container-credit form .inputBox input,
+.container-credit form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.3);
+    color: #444;
+}
+.container-credit form .flexBox{
+    display: flex;
+    gap: 15px;
+}
+.container-credit form .flexBox .inputBox{
+    flex: 1 1 150px;
+}
+.container-credit form .submit-btn{
+    width: 100%;
+    background: linear-gradient(45deg, $purple, $blue);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: $white;
+    cursor: pointer;
+    transition: .2s linear;
+    border-radius: 10px;
+}
+.container-credit form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+.container-credit .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 210px;
+    width: 320px;
+}
+.container-credit .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, $purple, $blue);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+    padding: 20px;
+}
+.container-credit .card-container .front .img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.container-credit .card-container .front .img img{
+    height: 40px;
+    border-radius: 5px;
+}
+.container-credit .card-container .front .card-number-box{
+    padding: 25px 0;
+    font-size: 20px;
+    color: $white;
+}
+.container-credit .card-container .front .flexbox{
+    display: flex;
+}
+.container-credit .card-container .front .flexbox .boxs:nth-child(1){
+    margin-right: auto;
+}
+.container-credit .card-container .front .flexbox .boxs{
+    font-size: 15px;
+    color: $white;
+}
+.container-credit .card-container .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, $purple, $blue);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transition: transform .4s ease-out;
+    transform: perspective(1000px) rotateY(180deg);
+}
+.container-credit .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+.container-credit .card-container .back .box{
+    padding: 0 20px;
+}
+.container-credit .card-container .back .box span{
+    color: #fff;
+    font-size: 15px;
+}
+.container-credit .card-container .back .box .cvv-box{
+    height: 40px;
+    padding: 8px;
+    margin-top: 5px;color: #333;
+    background: $white;
+    border-radius: 5px;
+    width: 100%;
+}
+.container-credit .card-container .back .box img{
+    margin-top: 10px;
+    height: 30px;
+}

@@ -1,0 +1,49 @@
+.blog .box-container{
+   @include grid(30rem);
+    .box{
+        @include general6();
+        &:hover .image img{
+            transform: scale(1.2);
+        }
+        .image{
+            height: 25rem;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 0px;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .content{
+            padding: 1.5rem 2rem;
+            h3{
+                font-size: 2rem;
+                color: $purple;
+            }
+            p{
+               @include general3();
+            }
+            .icons{
+                margin-top: 2rem;
+                padding-top: 1.5rem;
+                border-top: $border;
+                @include general();
+                justify-content: space-between;
+                a{
+                    font-size: 1.4rem;
+                    color: $blue;
+                    text-decoration: none;
+                    &:hover{
+                        color: $purple;
+                    }
+                    i{
+                        padding-right: .5rem;
+                        color: $purple;
+                    }
+                }
+            }
+        }
+    }
+}

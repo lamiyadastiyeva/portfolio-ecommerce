@@ -1,0 +1,44 @@
+.text{
+    margin-top: 80px;
+}
+h1{
+    font-size: 3.2rem;
+    color: $purple;
+    text-transform: capitalize;
+}
+.image{
+    border-radius: 10px;
+}
+h2{
+    font-size: 2.7rem;
+    color: $purple;
+}
+h5{
+    font-size: 2.2rem;
+    color: $purple;
+    margin-bottom: 20px;
+}
+.table{
+    font-size: 1.7rem;
+    color: $purple;
+    tr{
+        border: 2px solid $purple;
+        @include general7();
+    }
+}
+.minus-button, .general-remove-button{
+    @include general1();
+    background-color: $red;
+}
+.number-button{
+    @include general1();
+    background-color: $purple;
+}
+.plus-button{
+    @include general1();
+    background-color: $green;
+}
+.remove-button{
+    @include general1();
+    background-color: $orange;
+}

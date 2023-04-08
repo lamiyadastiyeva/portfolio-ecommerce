@@ -1,0 +1,58 @@
+.shop-image{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+}
+.shop-image ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.shop-image ul li{
+    list-style: none;
+    background: $white;
+    color: $purple;
+    font-size: 19px;
+    padding: 12px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.shop-image ul li.active{
+    background: $purple;
+    color: $white;
+    display: block;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product .itemBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    display: none;
+}
+
+.product .itemBox.active-content{
+    display: block;
+}
+
+.product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

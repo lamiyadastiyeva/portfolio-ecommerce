@@ -1,0 +1,92 @@
+.footer{
+    background: $light-bg;
+    .box-container{
+        @include grid(25rem);
+        .box1{
+            h3{
+                font-size: 2.2rem;
+                color: $purple;
+                padding: 1rem 0;
+            }
+            p{
+                font-size: 1.6rem;
+                color: $blue;
+                padding-bottom: 1rem;
+            }
+            a{
+                @include general3();
+                display: block;
+                text-decoration: none;
+                &:hover{
+                    color: $purple;
+                    i{
+                        padding-right: 2rem;
+                    }
+                }
+                i{
+                    padding-right: .5rem;
+                    color: $purple;
+                }
+            }
+            form input[type='email']{
+                width: 100%;
+                padding: 1rem 1.2rem;
+                font-size: 1.6rem;
+                color: $purple;
+                text-transform: none;
+                margin: .7rem 0;
+                border: $border;
+            }
+        }
+    }
+}
+button.scrolltoUp{
+    border-radius: 100%;
+    background: $purple;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    position:fixed;
+    bottom:100px;
+    right:50px;
+    transition: 1s;
+
+    &:hover{
+        background-color: $blue;
+        color: $yellow;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+   
+}
+.credit{
+    text-align: center;
+    font-size: 2rem;
+    color: $white;
+    background: $purple;
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .home .slides-container .slide .content h3{
+        font-size: 4rem;
+    }
+    .heading{
+        flex-flow: column;
+        gap: 1rem;
+    }
+}

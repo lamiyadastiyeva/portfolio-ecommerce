@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "1": "Furni",
+    "2": "Home",
+    "3": "About",
+    "4": "Shop",
+    "5": "Team",
+    "6": "Blog", 
+    "7": "Contact"
+  },
+  "home.section1": {
+    "text1": "New Arrivals",
+    "title": "Flexible Chair",
+    "text": "Don’t give up funtionality for great looks, these products have it all!",
+    "button.text": "READ MORE"
+  },
+  "home.section2": {
+    "text": "Limited Offer",
+    "title": "Upto 50% Off"
+  },
+  "f.1": {
+    "1": "Quick Links",
+    "2": "Home",
+    "3": "Shop",
+    "4": "About",
+    "5": "Team",
+    "6": "Blog",
+    "7": "Contact"
+  },
+  "f.2": {
+    "1": "Extra Links",
+    "2": "My Order",
+    "3": "My Wishlist",
+    "4": "My Account",
+    "5": "My Favorite",
+    "6": "Terms Of User"
+  },
+  "f.3": {
+    "1": "Extra Links",
+    "2": "Facebook",
+    "3": "Twitter",
+    "4": "Instagram",
+    "5": "Linkedin",
+    "6": "Pinterest"
+  },
+  "f.e": {
+    "1": "Created By Mr. Web Desinger | All Rights Reserved!"
+  },
+  "shop.section1": {
+    "title1": "OUR SHOP",
+    "link1": "Home",
+    "title2": "Shop",
+    "title3": "Our Categories",
+    "link2": "View All >>",
+    "text1": "House Sofa",
+    "text2": "Working Table",
+    "text3": "Corner Table",
+    "text4": "Office Chair",
+    "text5": "New Wardrope"
+  },
+  "shop.section2": {
+    "title1": "All Products",
+    "title": "Modern Furniture",
+    "text": "450"
+  },
+  "about.section1": {
+    "title1": "ABOUT US",
+    "link1": "Home",
+    "title2": "About",
+    "title4": "Welcome To Our Shop",
+    "title5": "We Make Your Home More Astonishing",
+    "text1": "The next vignette featured two colorful outfits inspired by Hans Christian Andersen’s character Gerda, who discovers an enchanted flower garden while looking for her friend Kay.",
+    "text2": "Find everything you need for modern dining – tables, chairs, stools, storage and accessories – and save 15% during the Annual Dining Sale."
+  },
+  "about.section2": {
+    "title1": "Our Categories",
+    "link1": "View All >>",
+    "title2": "House Sofa",
+    "text2": "Don’t give up funtionality for great looks, these products have it all",
+    "title3": "Working Table",
+    "text3": "Don’t give up funtionality for great looks, these products have it all",
+    "title4": "Office Chair",
+    "text4": "Don’t give up funtionality for great looks, these products have it all"
+  },
+  "team": {
+    "title1": "OUR TEAM",
+    "link1": "Home",
+    "title2": "Team",
+    "title3": "Our Categories",
+    "link2": "View All >>",
+    "title4": "John Doe",
+    "text": "Senior Desinger"
+  },
+  "blog": {
+    "title1": "OUR BLOGS",
+    "link1": "Home",
+    "title2": "Blog",
+    "title3": "Our Categories",
+    "link2": "View All >>",
+    "title4": "Blog Title Goes Here...",
+    "text": "Find everything you need for modern dining – tables, chairs, stools, storage and accessories – and save 15% during the Annual Dining Sale." ,
+    "link3": "21st May, 2022",
+    "link4": "By Admin"
+  },
+  "contact": {
+    "title1": "CONTACT US",
+    "link1": "Home",
+    "title2": "Contact",
+    "title3": "Our Categories",
+    "link2": "View All >>",
+    "title4": "Get In Touch",
+    "text1": "Your Name",
+    "text2": "Your Number",
+    "text3": "Your Email",
+    "text4": "Your Message"
+  },
+  "cart": {
+    "title": "Your Cart Is Empty",
+    "title1": "Basket",
+    "title2": "Cart",
+    "title3": "total items:",
+    "title4": "Images",
+    "title5": "Title",
+    "title6": "Price",
+    "title7": "Quantity",
+    "title8": "Total Price:"
+
+  }
+}

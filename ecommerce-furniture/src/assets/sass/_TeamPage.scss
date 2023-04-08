@@ -1,0 +1,86 @@
+.container{
+    position: relative;
+    width: 100%;
+    @include general();
+    @include general4();
+    flex-wrap: wrap;
+}
+.container .cards{
+    position: relative;
+    width: 325px;
+    height: 400px;
+    background: linear-gradient($purple, $purple 30%, $blue 30%, $blue);
+    margin: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+} 
+.container .cards .imgBox{
+    @include general2();
+    transition: 0.5s;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-origin: top;
+}
+.container .cards:hover .imgBox{
+    transform: translateY(30px) scale(0.5);
+}
+.container .cards .imgBox img{
+    @include general2();
+    object-fit: cover;
+}
+.container .cards .content{
+    @include general2();
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+.container .cards:hover .content{
+    transform: translateY(0);
+}
+.container .cards .content .details{
+    @include general();
+    @include general4();
+    flex-direction: column;
+}
+.container .cards .content .details h2{
+    color: $white;
+    font-size: 1.7em;
+    font-weight: 500;
+}
+.container .cards .content .details span{
+    font-size: 1.0em;
+    font-weight: 400;
+    color: $purple;
+}
+.social_icons{
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+    color: $purple;
+    &:hover{
+        color: $white;
+    }
+}
+.social_icons li{
+    list-style: none;
+    margin: 4px;
+}
+.social_icons li a{
+    width: 45px;
+    height: 45px;
+    @include general();
+    justify-content: center;
+    background: $blue;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: $white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.social_icons li a:hover{
+    transform: rotate(360deg);
+    background-color: $purple;
+}

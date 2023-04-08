@@ -1,0 +1,52 @@
+@mixin general {
+    display: flex;
+    align-items: center;
+}
+@mixin general1{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: $white;
+    text-align: center;
+}
+@mixin general2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@mixin general3{
+    font-size: 1.6rem;
+    color: $blue;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+@mixin general4{
+    justify-content: center;
+    text-align: center;
+}
+@mixin general5{
+    width: 100%;
+    height: auto;
+}
+@mixin general6{
+    border: $border;
+    background: $light-bg;
+    box-shadow: $box-shadow;
+}
+@mixin general7 {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+@mixin grid ($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 1.5rem;
+}
+
+
+.black{
+    background-color: black !important;
+}

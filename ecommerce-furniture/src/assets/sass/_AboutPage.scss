@@ -1,0 +1,57 @@
+.about{
+    @include general();
+    flex-wrap: wrap;
+    gap: 2rem;
+    .image{
+        flex: 1 1 40rem;
+        img{
+            width: 100%;
+            border-radius: 17px;
+        } 
+    }
+    .content{
+        flex: 1 1 40rem;
+        span{
+            font-size: 2rem;
+            color: $yellow;
+        }
+        h3{
+            font-size: 2.5rem;
+            color: $purple;
+            padding-top: 1rem;
+        }
+        p{
+            @include general3();
+        }
+    }
+}
+.services .box-container{
+    @include grid(30rem);
+    .box{
+        padding: 2rem;
+        border: $border;
+        border-radius: 12px;
+        text-align: center;
+        background: $white;
+        &:hover{
+            background: $purple;
+            img{
+                filter: invert(1);
+            }
+            h3, p{
+                color: $white;
+            }
+        }
+        img{
+            height: 8rem;
+            margin-bottom: 1rem;
+        }
+        h3{
+            font-size: 2.2rem;
+            color: $purple;
+        }
+        p{
+            @include general3();
+        }
+    }
+}
